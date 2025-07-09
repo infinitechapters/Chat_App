@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { useAuthStore } from '../store/useAuthStore';
 import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import Section2 from '../components/section2';
+import Section2 from '../components/Section2';
 
 const LoginPage = () => {
    const[formData, setFormData]=useState({
