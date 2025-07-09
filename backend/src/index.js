@@ -23,8 +23,17 @@ app.use(cors({
 }));
 
 
-app.use("/api/auth",authRoutes);
-app.use("/api/messages",messageRoute);
+// app.use("/api/auth",authRoutes);
+// app.use("/api/messages",messageRoute);
+
+console.log("✅ Before /api/auth");
+app.use("/api/auth", authRoutes);
+console.log("✅ After /api/auth");
+
+console.log("✅ Before /api/messages");
+app.use("/api/messages", messageRoute);
+console.log("✅ After /api/messages");
+
 
 if(process.env.NODE_ENV==="production"){
     app.use(express.static(path.join(__dirname,"../frontend/dist")));
