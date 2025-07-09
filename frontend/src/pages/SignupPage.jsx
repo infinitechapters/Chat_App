@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useAuthStore } from '../store/useAuthStore';
 import {Link} from "react-router-dom";
 import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare, User } from "lucide-react";
-import Section2 from '../components/section2';
+import Section2 from '../components/Section2';
 import toast from "react-hot-toast";
 
 
