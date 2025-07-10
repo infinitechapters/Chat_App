@@ -13,7 +13,6 @@
   "description": "",
   "dependencies": {
     "bcryptjs": "^3.0.2",
-    "chatapp": "file:..",
     "cloudinary": "^2.6.1",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
