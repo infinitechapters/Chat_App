@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useRef,useEffect } from 'react'
 import { useChatStore } from '../store/useChatStore'
 import MessageInput from './MessageInput.jsx';
 import MessageSkeleton from './skeleton/MessageSkeleton'
@@ -30,9 +30,9 @@ useEffect(()=>{
   </div>
 )
   return (
-    <div className="flex-1 flex flex-col overflow-auto ml-4">
+    <div className="flex-1 flex flex-col h-full bg-base-100 ml-4 ">
       <ChatHeader/>
-      <div className="flex-1 flex flex-col overflow-auto">
+      <div className="flex-1 overflow-y-auto p-4 space-y-4">
        {messages.map((message)=>(
         <div key={message._id} className={`chat ${message.senderId===authUser._id ? "chat-end":"chat-start"}`}
         ref={messageRef}>
