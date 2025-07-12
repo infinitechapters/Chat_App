@@ -20,7 +20,7 @@ const validateForm=()=>{
    if(!formData.email.trim()) return toast.error("Email is required");
    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) return toast.error("Invalid email format");
    if(!formData.password) return toast.error("Password is required");
-   if(formData.password.length <8) return toast.error("Password must contain atleat 8 characters");
+   if(formData.password.length <8) return toast.error("Password must contain atleast 8 characters");
 
    return true;
 };
